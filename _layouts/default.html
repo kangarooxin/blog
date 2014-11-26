@@ -6,7 +6,7 @@
     <title>{{site.title}}</title>
 
     <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/styles.css">
-    <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/desert.css">
     <script src="{{site.baseurl}}/javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -36,6 +36,13 @@
       <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
     </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+    <script type="text/javascript" src="{{site.baseurl}}/javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/javascripts/prettify.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
+      window.prettyPrint && prettyPrint();
+    });
+    </script>
   </body>
 </html>

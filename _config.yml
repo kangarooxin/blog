@@ -2,5 +2,5 @@ username: kangarooxin
 baseurl: /blog
 markdown: redcarpet
 safe: false
-pygments: true
+highlighter: false
 title: 飞鸟集
